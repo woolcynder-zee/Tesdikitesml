@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dikivermeil.id</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:#0b1220;
+  font-family:Arial, sans-serif;
+  color:white;
+}
+
+.header{
+  padding:20px;
+  text-align:center;
+  border-bottom:1px solid rgba(120,180,255,.2);
+}
+
+.header h1{
+  color:#7dd3fc;
+  font-size:28px;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  padding:14px;
+}
+
+.card{
+  background:#111827;
+  border:1px solid rgba(125,211,252,.25);
+  border-radius:18px;
+  overflow:hidden;
+  text-decoration:none;
+  color:white;
+  transition:.2s;
+  position:relative;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  border-color:#7dd3fc;
+}
+
+.card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  display:block;
+}
+
+.info{
+  padding:12px;
+}
+
+.title{
+  font-size:18px;
+  font-weight:bold;
+  line-height:1.4;
+  margin-bottom:10px;
+}
+
+.old{
+  color:#f87171;
+  text-decoration:line-through;
+  font-size:15px;
+  margin-bottom:4px;
+}
+
+.new{
+  color:#e5e7eb;
+  font-size:26px;
+  font-weight:bold;
+}
+
+/* SOLD OUT */
+
+.card.sold{
+  opacity:.7;
+}
+
+.card.sold img{
+  filter:grayscale(1);
+}
+
+.card.sold::after{
+  content:"SOLD OUT";
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:#ef4444;
+  color:white;
+  font-size:12px;
+  font-weight:bold;
+  padding:5px 10px;
+  border-radius:999px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>dikivermeil.id</h1>
+</div>
+
+<div class="products">
+
+  <!-- PRODUK 1 -->
+  <a href="produk1.html" class="card">
+    <img src="https://files.catbox.moe/lau8ih.jpg">
+
+    <div class="info">
+      <div class="title">
+        Fanny Lightborn | Gusion Venom
+      </div>
+
+      <div class="old">Rp 149.999</div>
+      <div class="new">Rp 99.999</div>
+    </div>
+  </a>
+
+  <!-- PRODUK 2 -->
+  <a href="produk2.html" class="card">
+    <img src="https://files.catbox.moe/gl6mcv.jpg">
+
+    <div class="info">
+      <div class="title">
+        Alpha Abyss | Emblem Max
+      </div>
+
+      <div class="old">Rp 399.999</div>
+      <div class="new">Rp 299.999</div>
+    </div>
+  </a>
+
+  <!-- PRODUK 3 -->
+  <a href="produk3.html" class="card sold">
+    <img src="https://files.catbox.moe/6xrn7n.jpg">
+
+    <div class="info">
+      <div class="title">
+        Hayabusa 11.11 | Aspirants
+      </div>
+
+      <div class="old">Rp 599.999</div>
+      <div class="new">Rp 449.999</div>
+    </div>
+  </a>
+
+  <!-- PRODUK 4 -->
+  <a href="produk4.html" class="card">
+    <img src="https://files.catbox.moe/a2rsp0.jpg">
+
+    <div class="info">
+      <div class="title">
+        Leomord Epic | Fanny Pace
+      </div>
+
+      <div class="old">Rp 249.999</div>
+      <div class="new">Rp 179.999</div>
+    </div>
+  </a>
+
+</div>
+
+</body>
+</html>

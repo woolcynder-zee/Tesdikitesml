@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Admin</title>
+
+<style>
+body{
+  background:#0b1220;
+  color:white;
+  font-family:Arial;
+  padding:20px;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border:none;
+  border-radius:10px;
+}
+
+button{
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:#38bdf8;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.card{
+  background:#111827;
+  padding:16px;
+  border-radius:14px;
+  margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>ADMIN PANEL</h1>
+
+<input id="title" placeholder="Title">
+<input id="subtitle" placeholder="Subtitle">
+<input id="price" placeholder="Price">
+<input id="oldPrice" placeholder="Old Price">
+
+<button onclick="saveProduct()">
+Tambah Produk
+</button>
+
+<div id="products"></div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
